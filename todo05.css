@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: rgb(58, 113, 95);
     font-family: "Poppins", sans-serif;
     color: white;
     min-height: 100vh;
@@ -41,7 +41,7 @@ form button {
 }
 
 form button:hover {
-    color: rgb(39, 182, 20);
+    color: rgb(58, 113, 95);
 }
 
 li {
@@ -85,6 +85,8 @@ input {
     color: #222;
     font-size: 1.5rem;
     padding-left: .5rem;
+    border-radius: .3rem;
+    margin: .2rem;
 }
 
 .singleEntry li {
@@ -95,7 +97,8 @@ input {
 .btn-trash {
     font-size: 1.5rem;
     padding: .5rem;
-    border: none;
+    border: 1px white solid;
+    border-radius: .2rem;
     background: none;
     cursor: pointer;
     outline: none;
@@ -103,7 +106,8 @@ input {
 
 .btn-checked:hover {
     color: white;
-    background: rgb(39, 182, 20);
+    background: rgb(58, 113, 95);
+    ;
 }
 
 .btn-trash:hover {
@@ -113,7 +117,7 @@ input {
 
 .btn-done,
 .btn-done:hover {
-    background: rgb(39, 182, 20);
+    background: rgb(58, 113, 95);
     color: white
     /* background: dodgerblue; */
 }

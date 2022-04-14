@@ -5,8 +5,9 @@ const input = document.querySelector('.input')
 const inputBtn = document.querySelector('.inputBtn')
 const list = document.querySelector('.list')
 
-// event listener
-inputBtn.addEventListener('click', addEntry)
+// event listeners
+inputBtn.addEventListener('click', addEntry) // add new item
+addEventListener('click', checkDelete) // check or delete item
 
 // add single entry
 function addEntry(e) {
@@ -24,8 +25,8 @@ function addEntry(e) {
 
         // create li 
         const entryText = document.createElement('li')
-        entryText.innerText = input.value
         entryText.classList.add('entryText')
+        entryText.innerHTML = input.value
         singleEntry.appendChild(entryText)
         arr.push(input.value)
         console.log(arr)
@@ -47,10 +48,9 @@ function addEntry(e) {
         input.value = ""
     }
 }
-// mark as checked and delete
+// check item
+function checkDelete(e) {
 
-addEventListener('click', (e) => {
-    // check item
     if (e.target.classList.contains('btn-checked')) {
         e.target.classList.toggle('btn-done')
     }
@@ -63,5 +63,4 @@ addEventListener('click', (e) => {
         arr.splice(indexOfItemToRemove, 1)
         console.log(arr)
     }
-
-})
+}
