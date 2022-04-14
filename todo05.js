@@ -55,7 +55,11 @@ function checkDelete(e) {
 
         for (f of Object.values(arr)) {
             if (e.target.parentElement.textContent == f.task) {
-                Object.values(f.status = 'done')
+                if (f.status == 'to do') {
+                    Object.values(f.status = 'done')
+                } else {
+                    Object.values(f.status = 'to do')
+                }
             }
         }
         console.log(arr)
