@@ -28,8 +28,7 @@ function addEntry(e) {
         entryText.classList.add('entryText')
         entryText.innerHTML = input.value
         singleEntry.appendChild(entryText)
-        arr.push(input.value)
-        console.log(arr)
+        arr.push({ task: input.value, status: 'to do' })
 
         // create checked button 
         const checkedButton = document.createElement('button')
@@ -53,8 +52,14 @@ function checkDelete(e) {
 
     if (e.target.classList.contains('btn-checked')) {
         e.target.classList.toggle('btn-done')
-    }
 
+        for (f of Object.values(arr)) {
+            if (e.target.parentElement.textContent == f.task) {
+                Object.values(f.status = 'done')
+            }
+        }
+        console.log(arr)
+    }
     // delete item
     if (e.target.classList.contains('btn-trash')) {
 
