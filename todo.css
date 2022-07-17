@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   background-color: rgb(59, 0, 51);
-  font-family: "Poppins", sans-serif;
   color: white;
   min-height: 100vh;
 }
@@ -53,6 +53,7 @@ li {
 input {
   background-color: white;
   font-size: inherit;
+
   /* color: white; */
 }
 
@@ -61,8 +62,10 @@ input {
 }
 
 .input::placeholder {
-  font-family: "Poppins", sans-serif;
-  color: rgb(204, 44, 16);
+  font-size: 1.5rem;
+
+  /* justify-content: right; */
+  color: rgb(199, 99, 81);
 }
 
 .list-container {
