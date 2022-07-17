@@ -1,4 +1,4 @@
-const arr = ["1", "2", "3"];
+const arr = [];
 
 // selectors
 
@@ -31,9 +31,8 @@ function addEntry(e) {
 
     // FALSE
     if (uniqueEntry === false) {
-      //   input.placeholder = "You've already added that task.";
-      console.log("You've already added that task.");
-      input.placeholder = "";
+      input.value = "";
+      input.placeholder = "You've already added that.";
     } else {
       // TRUE
       // create single entry

@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 header,
@@ -26,10 +26,10 @@ form {
 form input,
 form button {
   background: white;
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 0.8rem;
+  font-size: 1.5rem;
   border: none;
-  max-width: 50vw;
+  max-width: 100vw;
 }
 
 form input {
@@ -50,11 +50,8 @@ li {
 
 /* form input field */
 
-input {
+.input {
   background-color: white;
-  font-size: inherit;
-
-  /* color: white; */
 }
 
 .input:focus {
@@ -62,10 +59,10 @@ input {
 }
 
 .input::placeholder {
-  font-size: 1.5rem;
-
-  /* justify-content: right; */
+  font-size: 1.2rem;
+  text-align: center;
   color: rgb(199, 99, 81);
+  /* color: blue; */
 }
 
 .list-container {
